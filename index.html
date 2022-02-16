@@ -11,6 +11,11 @@
     }
     
     function drawHanzi(content){
+        debugger;
+        if(document.getElementsByTagName("svg").length > 0){
+          div = document.getElementsByTagName("svg")[0].parentNode;
+          div.parentNode.removeChild(div);
+        }
         const writer = cnchar.draw(content, {
             type: cnchar.draw.TYPE.ANIMATION,
             animation: {
