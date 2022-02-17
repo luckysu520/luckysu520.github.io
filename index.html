@@ -59,7 +59,7 @@
                     var jc = JSON.parse(xmlhttp.responseText);
                     urls = jc.urls;
                     for(i=0;i<urls.length;i++){
-                        document.getElementById(divName).innerHTML = '<a href="' + urls[i].addr + '">' + urls[i].title + '</a>&nbsp;&nbsp;';
+                        document.getElementById(divName).innerHTML += '<a href="' + urls[i].addr + '" target="view_window">' + urls[i].title + '</a>&nbsp;&nbsp;';
                     }
                 }
             }
