@@ -58,7 +58,7 @@
                 debugger;
                     var jc = JSON.parse(xmlhttp.responseText);
                     urls = jc.urls;
-                    for(i=0;i<urls.count;i++){
+                    for(i=0;i<urls.length;i++){
                         document.getElementById(divName).innerHtml = '<a href="' + urls[i].addr + '">' + urls[i].title + '</a><br>';
                     }
                 }
