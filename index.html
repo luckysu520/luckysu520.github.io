@@ -56,6 +56,7 @@
         xmlhttp.onreadystatechange = function(){/*XHR对象获取到返回信息后执行*/
             if (xmlhttp.readyState == 4) {
                 if (xmlhttp.status == 200) {
+                debugger;
                     var content = xmlhttp.responseText;
                     alert(content);
                 }
