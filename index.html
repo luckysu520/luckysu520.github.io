@@ -42,12 +42,34 @@
             "display": { "position": "right", "width": 50, "height": 50, "hOffset": 0, "vOffset": 0 }, 
             "mobile": { "show": true, "scale": 0.5 },
             "react": { "opacityDefault": 0.7, "opacityOnHover": 0.2 }
-        })
+        });
+        
+        fillUrl("divUrl");
+    }
+    
+    function fillUrl(divName){
+        var url = "url.json"/*json文件url，本地的就写本地的位置，如果是服务器的就写服务器的路径*/
+        debugger;
+        var request = new XMLHttpRequest();
+        request.open("get", url,false);/*设置请求方法与路径*/
+        request.send(null);/*不发送数据到服务器*/
+        request.onreadystatechange  = function () {/*XHR对象获取到返回信息后执行*/
+            if (xmlhttp.readyState == 4) {
+                if (xmlhttp.status == 200) {
+                    debugger;
+                    var content = xmlHttp.responseText;
+                }
+            }
+        };
     }
   </script>
   </head>
   <body>
-    <br><br>
+    <br>
+    <div id="divUrl">
+    
+    </div>
+    <br>
     <textarea id="content" rows="8" cols="30"></textarea><br>
     <button onclick="spellHanzi(document.querySelector('#content').value)">查看拼音</button>
     <button onclick="drawHanzi(document.querySelector('#content').value)">查看拼写</button><br>
