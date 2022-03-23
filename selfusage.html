@@ -24,16 +24,20 @@
   </script>
   </head>
   <body>
-<br>
-<p>在 ESXI 6.7中 删除状态为“无效”的虚拟机</p>
-<p>1.先在Esxi web管理界面先打开 ssh 端口</p>
-<p>2.使用putty 或 直接用Windows 10 自带的命令行，输入 ssh命令登录ESXI服务器</p>
-<p>3.cd  /etc/vmware/hostd目录</p>
-<p>4.在 /etc/vmware/hostd目录下输入vim-cmd vmsvc/getallvms 列表中显示<br>
-    Skipping invalid VM '10' ， Skipping为已失效的虚拟机<br>
-    编号10为该虚拟机的编号，可根据实际情况修改。</p>
-<p>5.使用以下命令取消注册虚拟机<br>
-    vim-cmd vmsvc/unregister 10</p>
+  <br>
+  <p>在 ESXI 6.7中 删除状态为“无效”的虚拟机</p>
+  <p>1.先在Esxi web管理界面先打开 ssh 端口</p>
+  <p>2.使用putty 或 直接用Windows 10 自带的命令行，输入 ssh命令登录ESXI服务器</p>
+  <p>3.cd  /etc/vmware/hostd目录</p>
+  <p>4.在 /etc/vmware/hostd目录下输入vim-cmd vmsvc/getallvms 列表中显示<br>
+      Skipping invalid VM '10' ， Skipping为已失效的虚拟机<br>
+      编号10为该虚拟机的编号，可根据实际情况修改。</p>
+  <p>5.使用以下命令取消注册虚拟机<br>
+      vim-cmd vmsvc/unregister 10</p>
+====================================================================================
+  <p>果核网</p>
+  <p>1、地址：<a href="https://www.ghxi.com/">果核</a></p>
+  <p>2、免工具破解<a hre="https://www.ghxi.com/kms.html">免</a></p>
 ====================================================================================
   </body>
 </html>
