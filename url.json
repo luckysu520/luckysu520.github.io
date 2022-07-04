@@ -7,6 +7,7 @@
         {"title":"图片压缩（tinypng）","addr":"https://tinypng.com/"},
         {"title":"魔术橡皮（magiceraser）","addr":"https://www.magiceraser.io/"},
         {"title":"图标（icomoon）","addr":"https://icomoon.io/"},
-        {"title":"FONT转BASE64（transfonter）","addr":"https://transfonter.org/"}
+        {"title":"FONT转BASE64（transfonter）","addr":"https://transfonter.org/"},
+        {"title":"接口文档","addr":"FlowerShop.doc"}
     ]
 }
