@@ -8,6 +8,7 @@
         {"title":"魔术橡皮（magiceraser）","addr":"https://www.magiceraser.io/"},
         {"title":"图标（icomoon）","addr":"https://icomoon.io/"},
         {"title":"FONT转BASE64（transfonter）","addr":"https://transfonter.org/"},
-        {"title":"接口文档","addr":"FlowerShop.doc"}
+        {"title":"接口文档","addr":"FlowerShop.doc"},
+	{"title":"个人网盘","addr":"http://et-disk.sowell.xyz:6088/"}
     ]
 }
