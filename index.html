@@ -66,6 +66,16 @@
             }
         };
     }
+
+	function juhuawen() {
+				inStr= document.getElementById("juhua").value;
+				var code = String.fromCharCode(1161);
+				var outStr = '';
+				for(var i=0,l=inStr.length; i<l; i++){
+					outStr += inStr.charAt(i) + code;
+				}
+				document.getElementById("jresult").value = outStr
+			}
   </script>
   </head>
   <body>
@@ -77,5 +87,9 @@
     <button onclick="spellHanzi(document.querySelector('#content').value)">查看拼音</button>
     <button onclick="drawHanzi(document.querySelector('#content').value)">查看拼写</button><br>
     <textarea id="result" rows="8" cols="30"></textarea>
+
+	<br>
+    <button onclick="juhuawen()">菊花</button>
+    <textarea id="jresult" rows="8" cols="30"></textarea>
   </body>
 </html>
