@@ -1,0 +1,7 @@
+{
+    "mp3":[
+        {"title":"Just Don't Want to Be Lonely","addr":"Just Don't Want to Be Lonely.mp3"},
+        {"title":"This Night Won't Last Forever","addr":"This Night Won't Last Forever.mp3"},
+	{"title":"假面舞会","addr":"假面舞会.mp3","default":1}
+    ]
+}

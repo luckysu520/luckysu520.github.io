@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+  <head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+  <title></title>
+  <script>
+
+  	var mp3 = [];
+
+    function fillMp3(divName){
+        var url = "Music/mp3.json"/*json文件url，本地的就写本地的位置，如果是服务器的就写服务器的路径*/
+        var xmlhttp  = new XMLHttpRequest();
+        xmlhttp.open("get", url);/*设置请求方法与路径*/
+        xmlhttp.send(null);/*不发送数据到服务器*/
+        xmlhttp.onreadystatechange = function(){/*XHR对象获取到返回信息后执行*/
+            if (xmlhttp.readyState == 4) {
+                if (xmlhttp.status == 200) {
+                    var jc = JSON.parse(xmlhttp.responseText);
+                    mp3 = jc.mp3;
+                    for(i=0;i<mp3.length;i++){
+                        //document.getElementById(divName).innerHTML += "<a href='#' onclick='play(\"" + path + "\")'>" + mp3[i].title + "</a><br>";
+						document.getElementById(divName).innerHTML += `<a href="#" onclick="play(${i})">${mp3[i].title}</a><br>`;
+						if(mp3[i]['default'] == 1){
+							 play(i);
+						}
+							
+                    }
+                }
+            }
+        };
+    }
+
+	function play(i){
+		let player = document.getElementById("player");
+		player.src = "Music/" + mp3[i].addr;
+		document.getElementById("mt").innerText = mp3[i].title;
+		player.play();
+	}
+
+	fillMp3("list");
+  </script>
+  </head>
+  <body>
+  	<span id="mt"></span><br>
+	<audio id="player" controls height="100" width="100" loop>
+	  <source src="" type="audio/mpeg">
+	</audio>
+  	<div id="list">
+	</div>
+  </body>
+</html>

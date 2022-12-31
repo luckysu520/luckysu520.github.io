@@ -1,0 +1,21 @@
+{
+    "urls":[
+
+        {"title":"小技巧（selfusage）","addr":"selfusage.html"},
+        {"title":"在线工具（bejson）","addr":"https://www.bejson.com/"},
+        {"title":"流程工具（diagrams）","addr":"https://app.diagrams.net/"},
+        {"title":"摩斯（morse）","addr":"morse.html"},
+        {"title":"图片压缩（tinypng）","addr":"https://tinypng.com/"},
+	{"title":"动画制作（gif）","addr":"https://gif.55.la/"},
+        {"title":"魔术橡皮（magiceraser）","addr":"https://www.magiceraser.io/"},
+        {"title":"图标（icomoon）","addr":"https://icomoon.io/"},
+	{"title":"符号大全（符号）","addr":"https://www.fuhaozi.cn/"},
+        {"title":"FONT转BASE64（transfonter）","addr":"https://transfonter.org/"},
+        {"title":"接口文档","addr":"FlowerShop.doc"},
+	{"title":"个人网盘","addr":"http://et-disk.sowell.xyz:6088/"},
+	{"title":"盘搜联盟","addr":"http://www.de56.com/"}, 
+	{"title":"外国临时邮箱","addr":"https://temp-mail.org/en/"},
+	{"title":"24mail","addr":"http://24mail.chacuo.net/"},
+	{"title":"鸠摩搜书","addr":"https://www.jiumodiary.com/"}
+    ]
+}

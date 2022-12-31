@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+  <head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+  <title></title>
+  <script src="https://eqcn.ajz.miesnfu.com/wp-content/plugins/wp-3d-pony/live2dw/lib/L2Dwidget.min.js"></script>
+  <script>
+    /*
+    小帅哥： https://unpkg.com/live2d-widget-model-chitose@1.0.5/assets/chitose.model.json
+    萌娘：https://unpkg.com/live2d-widget-model-shizuku@1.0.5/assets/shizuku.model.json 
+    小可爱（女）：https://unpkg.com/live2d-widget-model-koharu@1.0.5/assets/koharu.model.json 
+    小可爱（男）：https://unpkg.com/live2d-widget-model-haruto@1.0.5/assets/haruto.model.json
+    初音：https://unpkg.com/live2d-widget-model-miku@1.0.5/assets/miku.model.json 
+    */
+    
+    window.onload = function(){
+        L2Dwidget.init({ 
+            "model": { "jsonPath":"https://unpkg.com/live2d-widget-model-miku@1.0.5/assets/miku.model.json", "scale": 1, "hHeadPos":0.5, "vHeadPos":0.618 },
+            "display": { "position": "right", "width": 50, "height": 90, "hOffset": 0, "vOffset": 0 }, 
+            "mobile": { "show": true, "scale": 0.5 },
+            "react": { "opacityDefault": 0.7, "opacityOnHover": 0.2 }
+        });
+    }
+  </script>
+  </head>
+  <body>
+  <br>
+  <p>在 ESXI 6.7中 删除状态为“无效”的虚拟机</p>
+  <p>1.先在Esxi web管理界面先打开 ssh 端口</p>
+  <p>2.使用putty 或 直接用Windows 10 自带的命令行，输入 ssh命令登录ESXI服务器</p>
+  <p>3.cd  /etc/vmware/hostd目录</p>
+  <p>4.在 /etc/vmware/hostd目录下输入vim-cmd vmsvc/getallvms 列表中显示<br>
+      Skipping invalid VM '10' ， Skipping为已失效的虚拟机<br>
+      编号10为该虚拟机的编号，可根据实际情况修改。</p>
+  <p>5.使用以下命令取消注册虚拟机<br>
+      vim-cmd vmsvc/unregister 10</p>
+====================================================================================
+  <p>果核网</p>
+  <p>1、地址：<a href="https://www.ghxi.com/">果核</a></p>
+  <p>2、免工具破解<a href="https://www.ghxi.com/kms.html">免</a></p>
+====================================================================================
+
+  <p>IntelliJ Idea 破解 <a href="https://www.lzskyline.com/index.php/archives/157/" target="_blank">破</a>，用<a href="intelliJkegen.zip" target="_blank">这</a>
+  <p>在安装目录下bin目录中找到idea或idea64.vmpotions文件，后面加上 -javaagent:C:/intelliJkegen/ja-netfilter.jar（根据实际地址）
+====================================================================================
+  <p>当从GIT获取VUE源码后，如果出现检测报错，如prettier，则可以执行</p>
+  <p>"lint": "eslint --ext .js --fix&&vue-cli-service lint"</p>
+  </body>
+</html>
