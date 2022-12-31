@@ -8,7 +8,7 @@
   	var mp3 = [];
 
     function fillMp3(divName){
-        var url = "Music/mp3.json"/*json文件url，本地的就写本地的位置，如果是服务器的就写服务器的路径*/
+        var url = "mp3.json"/*json文件url，本地的就写本地的位置，如果是服务器的就写服务器的路径*/
         var xmlhttp  = new XMLHttpRequest();
         xmlhttp.open("get", url);/*设置请求方法与路径*/
         xmlhttp.send(null);/*不发送数据到服务器*/
@@ -32,7 +32,7 @@
 
 	function play(i){
 		let player = document.getElementById("player");
-		player.src = "Music/" + mp3[i].addr;
+		player.src = mp3[i].addr;
 		document.getElementById("mt").innerText = mp3[i].title;
 		player.play();
 	}
