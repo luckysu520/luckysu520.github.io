@@ -3,6 +3,7 @@
 	    {"title":"歌曲（music）","addr":"Music/index.html"},
         {"title":"小技巧（selfusage）","addr":"selfusage.html"},
         {"title":"在线工具（bejson）","addr":"https://www.bejson.com/"},
+        {"title":"JSON工具（json.cn）","addr":"https://www.json.cn/"},
         {"title":"流程工具（diagrams）","addr":"https://app.diagrams.net/"},
         {"title":"图片压缩（tinypng）","addr":"https://tinypng.com/"},
 	    {"title":"动画制作（gif）","addr":"https://gif.55.la/"},
